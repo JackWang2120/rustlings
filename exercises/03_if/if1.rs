@@ -4,10 +4,16 @@ fn bigger(a: i32, b: i32) -> i32 {
     // Do not use:
     // - another function call
     // - additional variables
+    let ans = if a>b {a}else{b};
+    return ans;
 }
 
 fn main() {
     // You can optionally experiment here.
+    let a:i32 = 10;
+    let b:i32 = 8;
+    let ans = bigger(a,b);
+    println!("The bigger number is: {ans}");
 }
 
 // Don't mind this for now :)
